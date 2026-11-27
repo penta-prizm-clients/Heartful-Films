@@ -100,7 +100,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialProjectTy
       `Location: ${submittedData.location || 'TBD'}\n\n` +
       `Our Vision / Message:\n${submittedData.message}\n\nWarmly,\n${submittedData.name}`
     );
-    return `mailto:${BRAND_INFO.emailPlaceholder}?subject=${subject}&body=${body}`;
+    return `mailto:${BRAND_INFO.email}?subject=${subject}&body=${body}`;
   };
 
   const copyInquirySummary = () => {
@@ -181,13 +181,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialProjectTy
                   </div>
                   <div>
                     <span className="text-[10px] uppercase tracking-widest text-[#8D7163] font-medium block">
-                      Inquiries Email (Placeholder)
+                      Inquiries Email
                     </span>
                     <a 
-                      href={`mailto:${BRAND_INFO.emailPlaceholder}`}
+                      href={`mailto:${BRAND_INFO.email}`}
                       className="text-xs sm:text-sm text-[#292724] hover:text-[#8D7163] transition-colors"
                     >
-                      {BRAND_INFO.emailPlaceholder}
+                      {BRAND_INFO.email}
                     </a>
                   </div>
                 </div>
@@ -198,19 +198,19 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialProjectTy
                   </div>
                   <div>
                     <span className="text-[10px] uppercase tracking-widest text-[#8D7163] font-medium block">
-                      Direct Telephone (Placeholder)
+                      Direct Telephone
                     </span>
                     <a 
-                      href={`tel:${BRAND_INFO.phonePlaceholder}`}
+                      href={`tel:${BRAND_INFO.phone}`}
                       className="text-xs sm:text-sm text-[#292724] hover:text-[#8D7163] transition-colors block"
                     >
-                      {BRAND_INFO.phonePlaceholder}
+                      {BRAND_INFO.phone}
                     </a>
                     <a 
-                      href={`tel:${BRAND_INFO.phonePlaceholder2}`}
+                      href={`tel:${BRAND_INFO.phone2}`}
                       className="text-xs sm:text-sm text-[#292724] hover:text-[#8D7163] transition-colors block"
                     >
-                      {BRAND_INFO.phonePlaceholder2}
+                      {BRAND_INFO.phone2}
                     </a>
                   </div>
                 </div>
@@ -221,10 +221,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialProjectTy
                   </div>
                   <div>
                     <span className="text-[10px] uppercase tracking-widest text-[#8D7163] font-medium block">
-                      Studio & Travel (Placeholder)
+                      Studio & Travel
                     </span>
                     <span className="text-xs sm:text-sm text-[#292724]">
-                      {BRAND_INFO.locationPlaceholder}
+                      {BRAND_INFO.location}
                     </span>
                   </div>
                 </div>

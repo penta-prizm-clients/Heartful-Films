@@ -135,21 +135,23 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="space-y-3 text-xs text-[#EDE3D8]/80 font-light">
               <div className="flex items-center gap-2.5">
                 <Mail className="w-3.5 h-3.5 text-[#8D7163]" />
-                <span>{BRAND_INFO.emailPlaceholder}</span>
+                <a href={`mailto:${BRAND_INFO.email}`} className="hover:text-white transition-colors">
+                  {BRAND_INFO.email}
+                </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-3.5 h-3.5 text-[#8D7163]" />
-                <a href={`tel:${BRAND_INFO.phonePlaceholder}`} className="hover:text-white transition-colors">
-                  {BRAND_INFO.phonePlaceholder}
+                <a href={`tel:${BRAND_INFO.phone}`} className="hover:text-white transition-colors">
+                  {BRAND_INFO.phone}
                 </a>
                 <span className="text-[#8D7163]">·</span>
-                <a href={`tel:${BRAND_INFO.phonePlaceholder2}`} className="hover:text-white transition-colors">
-                  {BRAND_INFO.phonePlaceholder2}
+                <a href={`tel:${BRAND_INFO.phone2}`} className="hover:text-white transition-colors">
+                  {BRAND_INFO.phone2}
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <MapPin className="w-3.5 h-3.5 text-[#8D7163]" />
-                <span>{BRAND_INFO.locationPlaceholder}</span>
+                <span>{BRAND_INFO.location}</span>
               </div>
             </div>
 

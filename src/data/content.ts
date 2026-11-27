@@ -43,10 +43,10 @@ export const BRAND_INFO = {
   tagline: "Every story deserves to be felt.",
   instagramUrl: "https://www.instagram.com/_heartful___/",
   instagramHandle: "@_heartful___",
-  phonePlaceholder: "+91 96561 06421",
-  phonePlaceholder2: "+91 94971 22130",
-  emailPlaceholder: "soon",
-  locationPlaceholder: "Kachani, Karakulam P. O, Trivandrum",
+  phone: "+91 96561 06421",
+  phone2: "+91 94971 22130",
+  email: "heartfulfilmsofficial@gmail.com",
+  location: "Kachani, Karakulam P. O, Trivandrum",
 };
 
 export const SERVICES_DATA: ServiceItem[] = [
